@@ -20,6 +20,7 @@ public class HelloController {
 	    model.addAttribute("hello", "Hello World!");
 	    List<Weather> weatherDataList = weatherService.findAllWeatherData();
 	    model.addAttribute("weatherDataList", weatherDataList);
+	    System.out.println("-----------------------");
 	    return "hello";
 	  }
 }
